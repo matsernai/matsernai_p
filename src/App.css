@@ -1,0 +1,132 @@
+:root {
+  --sidebar-flex: 1.5;
+  --condiv-flex: 6;
+  --fontsize-nav: 1.6rem;
+  --typing-font: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 60px 30px 0px 30px;
+  flex: var(--sidebar-flex);
+  background: rgb(17,34,64);
+}
+
+nav ul {
+  font-size: var(--fontsize-nav);
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 40px;
+}
+
+nav ul li a {
+  color: rgb(128,138,167);
+  text-decoration: none;
+}
+
+.condiv {
+  padding: 100px;
+  background-color: rgb(10,25,47);
+  flex: var(--condiv-flex);
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilepic {
+  border-radius: 50%;
+  width: 400px;
+  margin: 30px;
+}
+
+.social {
+  position: absolute;
+  margin: 20px;
+  display: flex;
+  bottom: 60px;
+}
+
+.social i {
+  padding-right: 30px;
+  font-size: 25px;
+  color: #9a9b9c;
+}
+
+.social i:hover {
+  color: rgb(84,212,188);
+}
+
+.typingeffect {
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+  color: rgb(70, 207, 182);
+}
+
+.about {
+  text-align: center;
+  color: rgb(84,212,188);
+}
+
+.subtopic {
+  margin: 10px 10px 30px 10px;
+}
+
+h1,h2,h3,h4 {
+  margin: 10px;
+  color: rgb(128,138,167);
+}
+
+p {
+  font-size: var(--fontsize-nav);
+}
+
+.widecard {
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  transition: .3s;
+  border-radius: 10px;
+  padding: .5rem;
+}
+
+.widecard:hover {
+  color: rgb(84,212,188);
+  background: rgb(17,34,64);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills ul {
+  display: flex;
+  background-color: rgb(17,34,64);
+  color: rgb(84,212,188);
+  border-radius: 10px;
+}
+
+.skills ul li {
+  list-style: none;
+  margin: 30px;
+}
+
+.active {
+  font-weight: bolder;
+  background-color: aqua;
+  border-radius: 10px 10px 10px 10px;
+  width: 70%;
+}
